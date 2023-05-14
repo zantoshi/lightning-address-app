@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -42,8 +44,8 @@
   <body>
 
 
-    <div class="container py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="container">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-2">
           <div class="col-lg-12">
             <h1 class="display-5 fw-bold lh-1 mb-3">Hello, welcome to my page 👋!</h1>
             <p class="lead">Below is my Lightning Network payment info.</p>
@@ -55,8 +57,8 @@
       </div>
     </div>
 
-    <div class="container py-5">
-      <div class="row align-items-center g-5 py-5">
+    <div class="container">
+      <div class="row align-items-center">
         <div class="col-lg-2">
           <h1 class="display-5 fw-bold">Donate</h1>
           
@@ -65,6 +67,9 @@
 
           </ul>
           <a href="{{static_charge}}"><canvas id="qrcode"></canvas></a>
+          <a href="https://zeb.gg/nostr-zbd-quickstart" target="_blank">
+            <img class="my-5" style="max-width: 200px;" src="https://cdn.zebedee.io/an/nostr/poweredbyzbd.png">
+          </a>
         </div>
       </div>
     </div>
