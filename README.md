@@ -4,6 +4,16 @@ This application is for users to power their own lightning address with their ow
 
 Follow the guide.
 
+Template for .env (create in the lightning-address-app directory with manage.py)
+```
+ZEBEDEE_API_KEY="API_KEY_GOES_HERE"
+LIGHTNING_ADDRESS="YOUR_LIGHTNING_ADDRESS_HERE"
+MY_DOMAIN="DOMAIN.com"
+STATIC_CHARGE_ID="YOUR_STATIC_CHARGE_ID_FROM_ZEBEDEE_HERE"
+STATIC_CHARGE="INPUT_URI_HERE"
+SECRET_KEY="YOUR_SECRET_KEY_HERE"
+```
+
 Example .env after complete setup. DON'T USE!
 ```
 ZEBEDEE_API_KEY="xVEhDAbL648Wn55Airkm2vPdq8dD6haf"
