@@ -15,5 +15,5 @@ def index(request):
     return render(request, "staticcharges/index.html", ctx)
 
 def get_lightning_address(request, username):
-    sc = lightning_address_project.get_static_charge_details(env('STATIC_CHARGE_ID'))
+    sc = lightning_address_project.get_static_charge_metadata(env('STATIC_CHARGE_ID'))
     return JsonResponse(sc)
